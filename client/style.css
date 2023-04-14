@@ -164,23 +164,22 @@ form img {
 }
 
 .cursor {
-    z-index: 999;
-    position: fixed;
-    background: #FFF;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: 0 0 20px #fff, 0 0 60px #fff, 0 0 100px #fff;
-    display: none;
+    z-index: 999 !important;
+    position: fixed !important;
+    background: #FFF !important;
+    width: 7px !important;
+    height: 7px !important;
+    border-radius: 50% !important;
+    pointer-events: none !important;
+    box-shadow: 0 0 20px #fff, 0 0 60px #fff, 0 0 100px #fff !important;
 }
 
 .cursor:before {
     content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid white;
-    transform: translate(-35%, -35%);
-    border-radius: 50%;
+    position: absolute !important;
+    width: 20px !important;
+    height: 20px !important;
+    border: 2px solid white !important;
+    transform: translate(-35%, -35%) !important;
+    border-radius: 50% !important;
 }
