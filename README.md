@@ -19,7 +19,7 @@ Aivana is a web-based chatbot application that uses OpenAI's powerful language p
 
 ## Getting Started
 
-To get started with Aivana, simply clone the repo and install the dependencies using `npm install`. Then, start the app using `npm start` and open your browser to `http://localhost:3000`. From there, you can start chatting with Aivana and testing out its capabilities!
+uploading soon
 
 ## Configuration
 
