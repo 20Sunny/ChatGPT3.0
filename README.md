@@ -24,4 +24,18 @@ To get started with Aivana, simply clone the repo and install the dependencies u
 ## Configuration
 
 The app requires an OpenAI API key to function. To use your own key, set the `OPENAI_API_KEY` environment variable to your key before starting the app. For example:
+export OPENAI_API_KEY=your_api_key_here
+npm start
+
+
+The app's behavior can be customized by editing the code in the `src` directory. In particular, you may want to modify the `generateResponse` function in `App.js` to change how Aivana generates responses to user input.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the project, please fork the repo and submit a pull request with your changes. Before submitting your pull request, please make sure that your code passes the existing tests and that you've added new tests for any new functionality you've added.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 
