@@ -9,7 +9,7 @@ window.addEventListener("focus", () => {
 const cursor = document.querySelector(".cursor");
 var timeout;
 
-//follow cursor on mousemove
+
 document.addEventListener("mousemove", (e) => {
     let x = e.pageX;
     let y = e.pageY;
@@ -18,7 +18,6 @@ document.addEventListener("mousemove", (e) => {
     cursor.style.left = x + "px";
     cursor.style.display = "block";
 
-    //cursor effects when mouse stopped
     function mouseStopped() {
         cursor.style.display = "none";
     }
@@ -26,7 +25,6 @@ document.addEventListener("mousemove", (e) => {
     timeout = setTimeout(mouseStopped, 10000);
 });
 
-//cursor effects when mouseout
 document.addEventListener("mouseout", () => {
     cursor.style.display = "none";
 });
@@ -49,8 +47,3 @@ document.addEventListener("keydown", function(e) {
         alert("Taking screenshots is not allowed on this website!");
     }
 });
-
-var icon = document.getElementById("lml");
-icon.onclick = function() {
-    document.body.classList.toggle("dark-theme");
-}
