@@ -6,14 +6,13 @@
     font-family: "Alegreya Sans", sans-serif;
 }
 
-:root {
-    --back: #343541;
-    --text: #40414F;
-    --white: #ffffff;
-}
-
 body {
-    background: var(--text);
+    background: #7b4397;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #dc2430, #7b4397);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #dc2430, #7b4397);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     cursor: none !important;
     color: var(--white);
 }
@@ -46,8 +45,47 @@ body {
 
 /* hides scrollbar */
 
-#chat_container::-webkit-scrollbar {
-    display: none;
+
+/* Firefox */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #FFFFFF #FF2929;
+}
+
+
+/* Chrome, Edge and Safari */
+
+*::-webkit-scrollbar {
+    width: 7px;
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: #ff292900;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #E1EAED00;
+}
+
+*::-webkit-scrollbar-track:active {
+    background: rgba( 255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 4px);
+    -webkit-backdrop-filter: blur( 4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba( 255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 5px);
+    -webkit-backdrop-filter: blur( 5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
 }
 
 .wrapper {
@@ -56,7 +94,11 @@ body {
 }
 
 .ai {
-    background: var(--back);
+    background: rgba( 255, 255, 255, 0.15);
+    backdrop-filter: blur( 2px);
+    -webkit-backdrop-filter: blur( 2px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
     border-radius: 50px;
 }
 
@@ -101,6 +143,46 @@ body {
     }
 }
 
+.navbar {
+    position: relative;
+    border: 1px solid #737373;
+    background: rgba( 255, 255, 255, 0.15);
+    backdrop-filter: blur( 2px);
+    -webkit-backdrop-filter: blur( 2px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    width: 100%;
+    z-index: 99;
+    padding: 5px 0 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#navlist {
+    list-style: none;
+    display: flex;
+}
+
+#navlist li img {
+    height: 40px;
+}
+
+#navlist li {
+    flex: auto;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+#navlist li a {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    padding: 7px 20px 7px 20px;
+    border-radius: 20px;
+    cursor: none;
+    border: 1px solid #fff;
+}
+
 .message {
     flex: 1;
     color: #dcdcdc;
@@ -129,19 +211,27 @@ form {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px;
     border-radius: 50px;
     margin-bottom: 1vh;
     border: 1px solid #737373;
-    background: var(--back);
+    background: rgba( 255, 255, 255, 0.15);
+    backdrop-filter: blur( 2px);
+    -webkit-backdrop-filter: blur( 2px);
+    border: 1px solid rgba( 255, 255, 255, 0.18);
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
+textarea::placeholder {
+    color: #000;
+    text-transform: capitalize;
+}
+
 textarea {
     width: 100%;
-    color: #fff;
+    color: #ffffff;
     font-size: 18px;
     padding: 10px;
     background: transparent;
@@ -159,27 +249,29 @@ button {
 }
 
 form img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
 }
 
 .cursor {
-    z-index: 999 !important;
-    position: fixed !important;
-    background: #FFF !important;
-    width: 7px !important;
-    height: 7px !important;
-    border-radius: 50% !important;
-    pointer-events: none !important;
-    box-shadow: 0 0 20px #fff, 0 0 60px #fff, 0 0 100px #fff !important;
+    z-index: 999;
+    position: fixed;
+    background: #FFF;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #fff, 0 0 60px #fff, 0 0 100px #fff;
+    display: none;
 }
 
 .cursor:before {
     content: '';
-    position: absolute !important;
-    width: 20px !important;
-    height: 20px !important;
-    border: 2px solid white !important;
-    transform: translate(-35%, -35%) !important;
-    border-radius: 50% !important;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    transform: translate(-35%, -35%);
+    border-radius: 50%;
 }
