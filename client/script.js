@@ -151,7 +151,7 @@ document.addEventListener("mouseout", () => {
 });
 
 window.ononline = function() {
-    alert("! ! !  YOU BACK TO ONLINE  ! ! !", "YOU ARE CONNECTED TO INTERNET ", "success");
+    alert("! ! !  YOU BACK TO ONLINE  ! ! !", "YOU ARE CONNECTED TO INTERNET ");
     document.getElementById('amca').hidden = false;
     return false;
 }
@@ -168,6 +168,8 @@ document.addEventListener("keydown", function(e) {
         alert("Taking screenshots is not allowed on this website!");
     }
 });
+document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
 
-
-console.log("Client Running")
+console.log("AIVANA IS RUNNING {Snny Sharma}")
