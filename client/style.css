@@ -91,6 +91,7 @@ body {
 .wrapper {
     width: 97%;
     padding: 10px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .ai {
@@ -155,6 +156,7 @@ body {
     padding: 5px 0 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 #navlist {
@@ -222,6 +224,7 @@ form {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 textarea::placeholder {
@@ -264,6 +267,7 @@ form img {
     pointer-events: none;
     box-shadow: 0 0 20px #fff, 0 0 60px #fff, 0 0 100px #fff;
     display: none;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .cursor:before {
@@ -274,4 +278,5 @@ form img {
     border: 2px solid white;
     transform: translate(-35%, -35%);
     border-radius: 50%;
+    filter: drop-shadow(2px 4px 6px black);
 }
