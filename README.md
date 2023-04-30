@@ -3,7 +3,7 @@
 Aivana is a web-based chatbot application that uses OpenAI's powerful language processing technology to provide human-like conversations with your users. This project is built using Express, Vite, React, and the OpenAI API.
 
 ## Table of Contents
- 
+
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Configuration](#configuration)
