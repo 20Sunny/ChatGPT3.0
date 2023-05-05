@@ -20,7 +20,10 @@ Aivana is a web-based chatbot application that uses OpenAI's powerful language p
 ## Getting Started
 - clone the repo. in a folder by running command `git clone https://github.com/20Sunny/ChatGPT3.0.git` in cmd.
 - open the file in code editor and thn the install command `npm install` in integral cmd of both folder SERveR and CLiENT.
-- create the .env file in server folder
+- create the `.env` file in server folder
+  OPENAI_API_KEY="your api"
+- paste your api key in the `.env` file like above.
+- 
 ## Configuration
 
 The app requires an OpenAI API key to function. To use your own key, set the `OPENAI_API_KEY` environment variable to your key before starting the app. For example:
