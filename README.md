@@ -23,7 +23,8 @@ Aivana is a web-based chatbot application that uses OpenAI's powerful language p
 - create the `.env` file in server folder
   OPENAI_API_KEY="your api"
 - paste your api key in the `.env` file like above.
-- 
+-
+- run the server folder using 
 ## Configuration
 
 The app requires an OpenAI API key to function. To use your own key, set the `OPENAI_API_KEY` environment variable to your key before starting the app. For example:
