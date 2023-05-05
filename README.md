@@ -18,9 +18,7 @@ Aivana is a web-based chatbot application that uses OpenAI's powerful language p
 - Scalable: the app can handle multiple users at once and can be easily deployed to a cloud-based server for even greater scalability
 
 ## Getting Started
-
-uploading soon
-
+- clone the repo.
 ## Configuration
 
 The app requires an OpenAI API key to function. To use your own key, set the `OPENAI_API_KEY` environment variable to your key before starting the app. For example:
