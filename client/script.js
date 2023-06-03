@@ -172,4 +172,4 @@ document.addEventListener("contextmenu", function(e) {
         e.preventDefault();
     });
 
-console.log("AIVANA IS RUNNING {Snny Sharma}")
+console.log("AIVANA IS RUNNING {Sunny Sharma}")
