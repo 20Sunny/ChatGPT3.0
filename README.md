@@ -1,5 +1,5 @@
 <center>I have not active api that why it not working on live site</center>
-
+ 
 # Aivana v1.1.0 - AI Chatbot Web Application
 
 Aivana is a web-based chatbot application that uses OpenAI's powerful language processing technology to provide human-like conversations with your users. This project is built using Express, Vite, React, and the OpenAI API.
