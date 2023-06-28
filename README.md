@@ -31,7 +31,7 @@
 
 The app requires an OpenAI API key to function. To use your own key, set the `OPENAI_API_KEY` environment variable to your key before starting the app. For example:
 export OPENAI_API_KEY=your_api_key_here
-'''npm start'''
+`npm start`
 
 
 The app's behavior can be customized by editing the code in the `src` directory. In particular, you may want to modify the `generateResponse` function in `App.js` to change how Aivana generates responses to user input.
