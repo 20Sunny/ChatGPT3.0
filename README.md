@@ -18,7 +18,10 @@
 - Scalable: the app can handle multiple users at once and can be easily deployed to a cloud-based server for even greater scalability
 
 ## Getting Started
-- clone the repo. in a folder by running command `git clone https://github.com/20Sunny/ChatGPT3.0.git` in cmd.
+- clone the repo. in a folder by running command in cmd.
+  ```
+  git clone https://github.com/20Sunny/ChatGPT3.0.git
+  ```
 - open the file in code editor and thn the install command `npm install` in integral cmd of both folder SERveR and CLiENT.
 - create the `.env` file in server folder
   OPENAI_API_KEY="your api"
