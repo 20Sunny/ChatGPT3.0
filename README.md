@@ -1,5 +1,4 @@
 <p align="center"><img width="180" src="https://aivanaart.vercel.app/assets/logo-76f396b8.png" alt="AIVANA"><h1 align="center">AIVANA - Aivlog</h1><h6 align='center'>I have not active api that why it not working on live site</h6></p>
-
 <a align="center" style="text-align: center;">Aivana is a web-based chatbot application that uses OpenAI's powerful language processing technology to provide human-like conversations with your users. This project is built using Express, Vite, React, and the OpenAI API.</a>
 
 ## Table of Contents
