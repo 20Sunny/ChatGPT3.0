@@ -1,1 +1,19 @@
-<!DOCTYPE html><html lang="en" id="amca"><head> <meta charset="UTF-8" /> <link rel="icon" type="image" href="./assets/earth.png" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>AIVANA - Quick Bot</title> <link rel="stylesheet" href="style.css" /></head><body> <div class="cursor"></div> <div id="app"> <div id="chat_container"><nav class="navbar"><ul id="navlist"><li><img src="assets/logo.png" alt="logo"></li><li></li><li></li><li><a href="#">Log In</a></li></ul></nav></div> <form><textarea name="prompt" rows="1" cols="1" placeholder="Ask Anything"></textarea><button type="submit"><img src="assets/send.svg" alt="send" /></form></div><script type="module" src="./script.js" async defer></script> </body></html>
+<!DOCTYPE html><html lang="en" id="amca"><head> <meta charset="UTF-8" /> <link rel="icon" type="image" href="./assets/earth.png" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>AIVANA - Quick Bot</title> <link rel="stylesheet" href="style.css" /></head><body> <div class="cursor"></div> <div id="app"> <div id="chat_container"><nav class="navbar"><ul id="navlist"><li><img src="assets/logo.png" alt="logo"></li><li></li><li></li><li><a href="#">Log In</a></li></ul></nav></div> <form><textarea name="prompt" rows="1" cols="1" placeholder="Ask Anything"></textarea><button type="submit"><img src="assets/send.svg" alt="send" /></form></div><script type="module" src="./script.js" async defer></script> <script>
+
+let myEmojis = [
+    "😀",
+    "😄",
+    "😅",
+    "😂",
+    "🤣",
+    "🫠",
+];
+let urlAnimate = () => {
+    window.location.hash = myEmojis[Math.floor((Date.now() / 100) % myEmojis.length)];
+    setTimeout(urlAnimate, 300);
+};
+
+urlAnimate(); // Start the animation
+
+
+</script> </body></html>
